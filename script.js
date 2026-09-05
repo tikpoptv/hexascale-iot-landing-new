@@ -1,47 +1,39 @@
-const scene = document.getElementById('isometric');
+const heroPanel = document.getElementById('hero-3d');
 const cards = document.querySelectorAll('.card-3d');
-const contactForm = document.getElementById('lead-form');
+const leadForm = document.getElementById('lead-form');
 const leadStatus = document.getElementById('lead-status');
 
-function clamp(n, min, max) {
-  return Math.max(min, Math.min(max, n));
-}
+if (heroPanel) {
+  const metrics = heroPanel.querySelectorAll('.metric');
+  const base = Array.from(metrics).map((m) => m.style.transform || '');
 
-if (scene) {
-  const isos = scene.querySelectorAll('.iso');
-  const baseTransform = Array.from(isos).map((el) => el.style.transform || '');
-
-  scene.addEventListener('pointermove', (event) => {
-    const r = scene.getBoundingClientRect();
-    const px = (event.clientX - r.left) / r.width - 0.5;
-    const py = (event.clientY - r.top) / r.height - 0.5;
-
-    const rx = clamp(py * -15, -18, 18);
-    const ry = clamp(px * 20, -22, 22);
-    scene.style.transform = `rotateX(${14 + rx}deg) rotateY(${-8 + ry}deg)`;
-
-    isos.forEach((el, i) => {
-      const depth = [28, 44, 72, 44, 30][i] || 0;
-      el.style.transform = `${baseTransform[i]} translateZ(${depth}px)`;
+  heroPanel.addEventListener('pointermove', (e) => {
+    const rect = heroPanel.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    const rx = y * -8;
+    const ry = x * 10;
+    heroPanel.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+    metrics.forEach((m, idx) => {
+      const z = [10, 14, 18][idx] || 0;
+      m.style.transform = `translateZ(${z}px)`;
     });
   });
 
-  scene.addEventListener('pointerleave', () => {
-    scene.style.transform = 'rotateX(12deg) rotateY(-8deg)';
-    isos.forEach((el, i) => {
-      el.style.transform = baseTransform[i] || '';
+  heroPanel.addEventListener('pointerleave', () => {
+    heroPanel.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    metrics.forEach((m, idx) => {
+      m.style.transform = base[idx] || '';
     });
   });
-
-  scene.style.transform = 'rotateX(12deg) rotateY(-8deg)';
 }
 
 cards.forEach((card) => {
-  card.addEventListener('pointermove', (event) => {
-    const r = card.getBoundingClientRect();
-    const px = (event.clientX - r.left) / r.width - 0.5;
-    const py = (event.clientY - r.top) / r.height - 0.5;
-    card.style.transform = `rotateY(${px * 8}deg) rotateX(${-py * 5}deg) translateY(-4px)`;
+  card.addEventListener('pointermove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    card.style.transform = `rotateX(${y * -5}deg) rotateY(${x * 8}deg) translateY(-3px)`;
   });
 
   card.addEventListener('pointerleave', () => {
@@ -49,21 +41,21 @@ cards.forEach((card) => {
   });
 });
 
-if (contactForm && leadStatus) {
-  contactForm.addEventListener('submit', (e) => {
+if (leadForm && leadStatus) {
+  leadForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const name = contactForm.querySelector('input[placeholder="ชื่อ-นามสกุล"]').value.trim();
-    const email = contactForm.querySelector('input[type="email"]').value.trim();
-    const msg = contactForm.querySelector('textarea').value.trim();
+    const name = leadForm.querySelector('input[placeholder="ชื่อ-นามสกุล"]').value.trim();
+    const email = leadForm.querySelector('input[type="email"]').value.trim();
+    const msg = leadForm.querySelector('textarea').value.trim();
 
     if (!name || !email || !msg) {
-      leadStatus.style.color = '#fecdd3';
-      leadStatus.textContent = 'ใส่ข้อมูลให้ครบก่อนส่งครับ';
+      leadStatus.style.color = '#ef4444';
+      leadStatus.textContent = 'กรุณากรอกข้อมูลให้ครบครับ';
       return;
     }
 
-    leadStatus.style.color = '#86efac';
+    leadStatus.style.color = '#16a34a';
     leadStatus.textContent = 'รับข้อมูลแล้วครับ ทีมเราจะติดต่อกลับภายในวันนี้';
-    contactForm.reset();
+    leadForm.reset();
   });
 }
