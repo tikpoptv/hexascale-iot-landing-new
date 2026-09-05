@@ -21,7 +21,7 @@ if (heroPanel) {
   });
 
   heroPanel.addEventListener('pointerleave', () => {
-    heroPanel.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    heroPanel.style.transform = '';
     metrics.forEach((m, idx) => {
       m.style.transform = base[idx] || '';
     });
