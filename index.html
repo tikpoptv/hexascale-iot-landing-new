@@ -3,131 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HexaScale IoT | Simple, Smart, Reliable</title>
+    <title>HexaScale IoT | เรื่องราวแบบภาพ</title>
     <meta
       name="description"
-      content="HexaScale IoT Landing: ออกแบบระบบเครือข่ายเซ็นเซอร์ ระบบแจ้งเตือน และแดชบอร์ดที่ใช้งานได้จริง"
+      content="HexaScale IoT story landing: วางระบบ IoT ผ่านภาพเล่าเรื่องแบบเรียลไทม์"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="grain"></div>
-    <header class="topbar glass">
-      <a href="#" class="brand">HexaScale IoT</a>
+    <header class="topbar">
+      <p class="brand">HexaScale IoT</p>
       <nav>
-        <a href="#service">บริการ</a>
-        <a href="#work">การทำงาน</a>
-        <a href="#cases">โซลูชัน</a>
-        <a href="#contact">ติดต่อ</a>
+        <a href="#story">Story</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-ghost" href="#contact">เริ่มใช้งาน</a>
     </header>
 
     <main>
       <section class="hero section">
-        <p class="eyebrow">IoT for Operations</p>
-        <h1>ระบบ IoT ที่ทำงานแทนทีมเฝ้าระวังได้</h1>
-        <p class="hero-text">
-          เราสร้างแพลตฟอร์มจากจุดที่ธุรกิจเจอปัญหาจริง: ดูข้อมูลเร็ว, เจอเหตุทีเดียว, และแจ้งเตือนแบบทันที
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-solid" href="#work">ดูขั้นตอน</a>
-          <a class="btn btn-soft" href="#contact">ขอคำแนะนำ</a>
-        </div>
-
-        <div class="hero-panel glass card-3d" id="hero-3d">
-          <div class="metric">
-            <span>ติดตั้งได้เร็ว</span>
-            <strong>เร็วกว่า</strong>
-            <small>ระบบเดโมภายใน 7 วัน</small>
-          </div>
-          <div class="metric">
-            <span>ดูแลตลอดเวลา</span>
-            <strong>24/7</strong>
-            <small>แดชบอร์ด + แจ้งเตือน</small>
-          </div>
-          <div class="metric">
-            <span>ขยายได้</span>
-            <strong>ต่อเนื่อง</strong>
-            <small>เพิ่มจุดวัดได้ทีละขั้น</small>
-          </div>
-        </div>
+        <p class="eyebrow">Product Story</p>
+        <h1>เล่าเรื่องโครงการ IoT ด้วยภาพ</h1>
+        <p>น้อยคำ กว้างภาพ เห็นภาพก่อนอ่านคำอธิบาย</p>
+        <a class="btn btn-solid" href="#story">เริ่มเล่าเรื่อง</a>
       </section>
 
-      <section id="service" class="section">
-        <div class="section-head">
-          <p class="eyebrow">Service</p>
-          <h2>สิ่งที่ทีมเราเป็นเรื่องหลัก</h2>
-        </div>
-        <div class="grid cards-3">
-          <article class="card card-3d">
-            <h3>ออกแบบระบบ</h3>
-            <p>คัดเลือกอุปกรณ์และเครือข่ายให้เหมาะกับพื้นที่ใช้งานจริง</p>
+      <section id="story" class="story section" aria-label="IoT story">
+        <div class="story-track" id="story-track">
+          <article class="story-slide">
+            <img src="https://images.unsplash.com/photo-1581093458791-9d1d2c3d0f7a?auto=format&fit=crop&w=1600&q=80" alt="โรงงานเกษตรสมัยใหม่" />
+            <div class="overlay"><span>1</span><p>เริ่มจากความต้องการวัดสภาพแวดล้อมจริง</p></div>
           </article>
-          <article class="card card-3d">
-            <h3>รับข้อมูล</h3>
-            <p>ระบบ pipeline ที่เสถียร พร้อมเก็บข้อมูลและประวัติครบแบบตรวจสอบได้</p>
+          <article class="story-slide">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1600&q=80" alt="เซ็นเซอร์ในพื้นที่จริง" />
+            <div class="overlay"><span>2</span><p>วางเซ็นเซอร์และ Gateway ให้เสถียร</p></div>
           </article>
-          <article class="card card-3d">
-            <h3>ระบบแจ้งเตือน</h3>
-            <p>ตั้งกฎแจ้งเตือนอัจฉริยะ ส่งต่อผ่าน Line, Email, Webhook</p>
+          <article class="story-slide">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=80" alt="กระบวนการส่งข้อมูล" />
+            <div class="overlay"><span>3</span><p>ข้อมูลไหลเป็นสายงานเดียวแบบติดตามได้</p></div>
+          </article>
+          <article class="story-slide">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1600&q=80" alt="แผงควบคุม" />
+            <div class="overlay"><span>4</span><p>แดชบอร์ดแป้นเดียวอ่านสถานะทุกจุด</p></div>
+          </article>
+          <article class="story-slide">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1600&q=80" alt="แจ้งเตือนอัตโนมัติ" />
+            <div class="overlay"><span>5</span><p>ระบบแจ้งเตือนทำงานแทนคนเฝ้าระวัง</p></div>
+          </article>
+          <article class="story-slide">
+            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1600&q=80" alt="สรุปผลการดำเนินงาน" />
+            <div class="overlay"><span>6</span><p>ทีมเห็นผลแล้วขยายระบบต่อได้ทันที</p></div>
           </article>
         </div>
       </section>
 
-      <section id="cases" class="section">
-        <div class="section-head">
-          <p class="eyebrow">Use cases</p>
-          <h2>เหมาะกับงานแบบไหน</h2>
-        </div>
-        <div class="split">
-          <article class="case card card-3d">
-            <h3>โรงงานเกษตร</h3>
-            <p>ควบคุมอุณหภูมิ ความชื้น และการใช้น้ำแบบเรียลไทม์ ลดความเสี่ยงล่าช้า</p>
-          </article>
-          <article class="case card card-3d">
-            <h3>คลังสินค้า</h3>
-            <p>ติดตามเครือข่ายอุปกรณ์ จุดดับ/จุดรั่ว และสถานะเครื่องในพื้นที่กว้าง</p>
-          </article>
-          <article class="case card card-3d">
-            <h3>ระบบกระจาย</h3>
-            <p>จัดการสถานี IoT หลายสิบถึงหลายร้อยจุดโดยไม่ให้ทีมล้นข้อมูล</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="work" class="section">
-        <div class="section-head">
-          <p class="eyebrow">How we work</p>
-          <h2>4 ขั้นตอนที่ใช้ได้จริง</h2>
-        </div>
-        <ol class="timeline">
-          <li class="card card-3d"><strong>1</strong><p>สำรวจพื้นที่และนิยามเป้าหมายการวัด</p></li>
-          <li class="card card-3d"><strong>2</strong><p>ออกแบบ topology + dashboard prototype</p></li>
-          <li class="card card-3d"><strong>3</strong><p>รัน pilot และเทสต์ reliability</p></li>
-          <li class="card card-3d"><strong>4</strong><p>เปิดใช้งานจริง พร้อม support รายสัปดาห์</p></li>
-        </ol>
-      </section>
-
-      <section id="contact" class="section contact-wrap">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>เริ่มจากแค่ปัญหาสั้นๆ ก็พอ</h2>
-          <p>
-            ส่งสรุปโจทย์ 3 บรรทัด: งานของคุณ, จำนวนอุปกรณ์, และเกณฑ์แจ้งเตือน เราจะวางแผนให้
-          </p>
-        </div>
-        <form id="lead-form" class="card card-3d">
-          <input required placeholder="ชื่อ-นามสกุล" />
+      <section id="contact" class="contact section">
+        <h2>พร้อมเล่าเรื่องของคุณแบบเดียวกัน</h2>
+        <p>ใส่สั้นๆ 3 บรรทัด ทีมจัด storyboard และแผนงานให้กลับมา</p>
+        <form id="lead-form">
+          <input required placeholder="ชื่อ" />
           <input required type="email" placeholder="Email" />
-          <textarea required placeholder="ข้อมูลโครงการ"></textarea>
-          <button type="submit" class="btn btn-solid">ส่งให้ทีม</button>
+          <textarea required placeholder="เป้าหมายของคุณ"></textarea>
+          <button type="submit" class="btn btn-ghost">ส่งให้ทีม</button>
           <p id="lead-status" class="status" aria-live="polite"></p>
         </form>
       </section>
@@ -135,7 +77,7 @@
 
     <footer>
       <p>© 2026 HexaScale Solutions</p>
-      <a href="https://github.com/tikpoptv/hexascale-iot-landing-new" target="_blank" rel="noopener noreferrer">GitHub Source</a>
+      <p><a href="https://github.com/tikpoptv/hexascale-iot-landing-new" target="_blank" rel="noopener noreferrer">GitHub</a></p>
     </footer>
 
     <script src="script.js"></script>
