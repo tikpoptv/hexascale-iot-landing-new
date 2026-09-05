@@ -3,205 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HexaScale IoT | ระบบ IoT เชื่อมต่อจริงสำหรับธุรกิจไทย</title>
+    <title>HexaScale IoT | ดิจิทัลออโตเมชัน ที่ใช้งานได้จริง</title>
     <meta
       name="description"
-      content="HexaScale IoT Landing Page: ระบบเชื่อมต่ออุปกรณ์ เซ็นเซอร์ แดชบอร์ด และการแจ้งเตือนอัตโนมัติสำหรับธุรกิจไทย"
+      content="HexaScale IoT Landing: ระบบเซ็นเซอร์ + แดชบอร์ด + แจ้งเตือน ออกแบบเพื่อรันจริงในธุรกิจไทย"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700;800&family=Kanit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700;800&family=Kanit:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="aurora" aria-hidden="true"></div>
-    <div class="noise" aria-hidden="true"></div>
+    <div class="scene-bg" aria-hidden="true"></div>
 
     <header class="topbar glass">
       <a href="#" class="brand">HexaScale IoT</a>
       <nav>
         <a href="#services">บริการ</a>
-        <a href="#solutions">โซลูชัน</a>
-        <a href="#workflow">ขั้นตอน</a>
+        <a href="#architecture">โซลูชัน</a>
+        <a href="#flow">ขั้นตอน</a>
         <a href="#contact">ติดต่อ</a>
       </nav>
-      <a href="#contact" class="btn btn-cta">เริ่มโครงการ</a>
+      <a href="#contact" class="btn btn-ghost">รับคำแนะนำ</a>
     </header>
 
     <main>
-      <section class="hero section scene-depth">
+      <section class="hero section">
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">HexaScale Solutions • IoT & Automation</p>
-            <h1>
-              ระบบ IoT ที่ติดตั้งแล้วใช้งานได้จริง
-              <span>ยังคุมได้แบบมองเห็นได้ทุกนาที</span>
-            </h1>
-            <p class="subtitle">
-              เรายิงระบบแบบครบวงจรตั้งแต่เซ็นเซอร์ การรับส่งข้อมูล จนถึงแดชบอร์ดเชิงการตัดสินใจ
-              ข้อมูลที่เห็นได้ชัดจะช่วยให้ทีมของคุณตอบสนองเร็วขึ้น ลดความเสี่ยง และลดงานเฝ้าระวังแบบดื้อๆ ได้มากขึ้น
-            </p>
+            <p class="eyebrow">IoT for real operation</p>
+            <h1>เห็นของจริงก่อนจ่ายจริง</h1>
+            <p class="subtitle">เราออกแบบระบบ IoT แบบครบวงจรให้ทีมคุณเฝ้าระวังเชิงปฏิบัติการได้ทันทีหลังติดตั้ง โดยไม่ต้องรอปรับหลายรอบ.</p>
             <div class="hero-actions">
-              <a class="btn btn-solid" href="#solutions">ดูโซลูชัน</a>
-              <a class="btn btn-ghost" href="#contact">คุยกับทีมเรา</a>
+              <a class="btn btn-solid" href="#services">ดูบริการ</a>
+              <a class="btn btn-outline" href="#contact">คุยกับทีม</a>
             </div>
           </div>
 
-          <div class="scene-stage" id="hero-stage">
-            <div class="ring ring-a"></div>
-            <div class="ring ring-b"></div>
-            <div class="node n1" aria-hidden="true">
-              Sensor
-            </div>
-            <div class="node n2" aria-hidden="true">
-              Gateway
-            </div>
-            <div class="node n3" aria-hidden="true">
-              Cloud
-            </div>
-            <div class="node n4" aria-hidden="true">
-              Dashboard
-            </div>
-            <div class="node n5" aria-hidden="true">
-              Action
-            </div>
-            <div class="wire wire-1" aria-hidden="true"></div>
-            <div class="wire wire-2" aria-hidden="true"></div>
-            <div class="wire wire-3" aria-hidden="true"></div>
+          <div class="core-loom" id="hero-stage" aria-label="IoT network flow">
+            <div class="ring"></div>
+            <div class="ring r2"></div>
+            <div class="node n1"><span>Sensor</span></div>
+            <div class="node n2"><span>Gateway</span></div>
+            <div class="node n3"><span>Cloud</span></div>
+            <div class="node n4"><span>Dashboard</span></div>
+            <div class="node n5"><span>Alert</span></div>
+            <div class="trail t1"></div>
+            <div class="trail t2"></div>
+            <div class="trail t3"></div>
+            <div class="trail t4"></div>
           </div>
         </div>
 
         <div class="hero-metrics">
-          <article class="card-3d">
-            <h3>99.9%+</h3>
-            <p>เป้าหมายอัปไทม์ที่ออกแบบมาเพื่อใช้งานจริงต่อเนื่อง</p>
+          <article class="mini card-3d">
+            <h3>60 วัน</h3>
+            <p>เริ่มต้นจากไอเดียถึงระบบรันได้จริง</p>
           </article>
-          <article class="card-3d">
-            <h3>เริ่มเร็ว</h3>
-            <p>ร่างโซลูชันได้ชัดในสัปดาห์แรก หลังนั้นค่อยขยายแบบคุมงบ</p>
+          <article class="mini card-3d">
+            <h3>24/7</h3>
+            <p>ติดตามสถานะด้วยการแจ้งเตือนอัตโนมัติ</p>
           </article>
-          <article class="card-3d">
-            <h3>ติดตามต่อเนื่อง</h3>
-            <p>แจ้งเตือนและเฝ้าระวังอัตโนมัติ ทำให้งานยังไหลแม้ทีมพักกลางคืน</p>
+          <article class="mini card-3d">
+            <h3>ลดภาระงาน</h3>
+            <p>ทีมสั้นขั้นตอนการตรวจเช็กด้วยแดชบอร์ดเดียว</p>
           </article>
         </div>
       </section>
 
-      <section id="services" class="section card-grid scene-depth">
+      <section id="services" class="section">
         <div class="section-head">
           <p class="eyebrow">Services</p>
-          <h2>บริการที่ทีมเราดูแลครบตั้งแต่ต้นจนจบ</h2>
+          <h2>บริการหลัก</h2>
+          <p class="section-lead">คุมระบบให้พร้อมใช้งาน ตั้งแต่ฮาร์ดแวร์ถึงการวิเคราะห์ข้อมูล</p>
         </div>
+
         <div class="grid cols-3">
           <article class="panel card-3d">
-            <span class="tag">01</span>
-            <h3>ออกแบบระบบ IoT แบบครบวงจร</h3>
-            <p>คัดเลือกอุปกรณ์ต่อระบบ สร้างการเชื่อมต่อ ไปจนถึง backend, API และแดชบอร์ดแบบใช้งานจริงได้ทันที</p>
+            <h3>ติดตั้ง & เชื่อมต่ออุปกรณ์</h3>
+            <p>เลือกโซนบอร์ด โปรโตคอล และเซ็นเซอร์ให้เหมาะกับพื้นที่ของคุณ</p>
           </article>
           <article class="panel card-3d">
-            <span class="tag">02</span>
-            <h3>Cloud Dashboard & Analytics</h3>
-            <p>แผงติดตามเรียลไทม์ สถิติ และแนวโน้มแบบเข้าใจง่าย พร้อมเงื่อนไขแจ้งเตือนที่ปรับได้ตามความต้องการของคุณ</p>
+            <h3>Dashboard + API</h3>
+            <p>แสดงข้อมูลแบบเรียลไทม์ พร้อมตัวคุมเหตุการณ์แบบ custom ตามทีม</p>
           </article>
           <article class="panel card-3d">
-            <span class="tag">03</span>
-            <h3>Automation & Alerting</h3>
-            <p>ตั้ง rule อัตโนมัติ, ส่งแจ้งเตือนข้ามช่องทาง และควบคุมการตอบสนองของอุปกรณ์ ลดการรอแก้ปัญหาแบบช้า</p>
-          </article>
-          <article class="panel card-3d">
-            <span class="tag">04</span>
-            <h3>Smart Farming & Asset Tracking</h3>
-            <p>โซลูชันเกษตรอัจฉริยะ ติดตามอุณหภูมิ ความชื้น การใช้น้ำ และสถานะอุปกรณ์แบบละเอียดทั้งวันทั้งคืน</p>
-          </article>
-          <article class="panel card-3d">
-            <span class="tag">05</span>
-            <h3>Security & Reliability</h3>
-            <p>วางมาตรการความปลอดภัยตั้งแต่ชั้นรับส่งข้อมูลถึงคลาวด์ มี audit log และการสำรองข้อมูลเพื่อความต่อเนื่อง</p>
-          </article>
-          <article class="panel card-3d">
-            <span class="tag">06</span>
-            <h3>ดูแลต่อเนื่องแบบมืออาชีพ</h3>
-            <p>ทีมปฏิบัติการจะวิเคราะห์เหตุการณ์ ปรับค่าระบบ และช่วยให้โครงสร้างขยายตัวได้ตามธุรกิจจริง โดยไม่แก้แบบฉาบฉวย</p>
+            <h3>Automate & Alert</h3>
+            <p>สร้างกฎตอบสนองอัตโนมัติ ส่งแจ้งเตือนไปยัง Line, Slack, Email</p>
           </article>
         </div>
       </section>
 
-      <section id="solutions" class="section scene-depth">
+      <section id="architecture" class="section">
         <div class="section-head">
-          <p class="eyebrow">Showcase</p>
-          <h2>ตัวอย่างสถาปัตยกรรมที่เห็นผลจริง</h2>
+          <p class="eyebrow">System map</p>
+          <h2>สถาปัตยกรรมที่มองเห็นได้ทันที</h2>
         </div>
-        <div class="split">
-          <div class="visual-panel card-3d">
-            <div class="glow"></div>
-            <p class="mono">System Flow</p>
-            <pre>Sensor → Gateway → Message Queue → API → Storage → Dashboard → Action</pre>
-            <ul>
-              <li>รองรับ AWS, GCP, Azure ได้ชัดเจน</li>
-              <li>ดูแลอุปกรณ์ได้หลายสิบถึงหลายร้อยตัวในสายงานเดียว</li>
-              <li>แจ้งเตือนผ่าน Line, Email, Slack/Telegram, Webhook</li>
-            </ul>
-          </div>
-          <div class="flow">
-            <article class="card-3d">
-              <h3>ผลลัพธ์ที่เจอมากที่สุด</h3>
-              <p>
-                เคยทำระบบเฝ้าระวังโรงเรือนอัจฉริยะเชื่อมเซ็นเซอร์จำนวน 30 จุด ตั้งค่าขอบเขตอุณหภูมิและความชื้นแบบยืดหยุ่น
-                ลดเวลาวิเคราะห์เหตุฉุกเฉินลงมาก และให้งานตรวจเช็กหนักขึ้นได้ชัดเจน
-              </p>
-            </article>
-            <article class="card-3d">
-              <h3>เหมาะกับใคร</h3>
-              <p>
-                ทีมที่ต้องการเห็นข้อมูลเรียลไทม์ คุมต้นทุน และตอบสนองไวขึ้น โดยไม่ต้องรอคนเฝ้าระบบตลอดเวลา
-                เช่น โรงงานเกษตร โลจิสติกส์ คลังสินค้า และภาคสนามอุปกรณ์ต่างๆ
-              </p>
-            </article>
-          </div>
+
+        <div class="matrix card-3d">
+          <p class="mono">Sensor → Gateway → API → Storage → Dashboard → Action</p>
+          <ul>
+            <li>รองรับงานเกษตร อุตสาหกรรม และคลังสินค้า</li>
+            <li>ยืดหยุ่นระดับจุดวัดหลายสิบหรือหลายร้อยจุด</li>
+            <li>ขยายงานทีละเฟส โดยไม่หยุดระบบเดิม</li>
+          </ul>
         </div>
       </section>
 
-      <section id="workflow" class="section card-grid scene-depth">
+      <section id="flow" class="section">
         <div class="section-head">
-          <p class="eyebrow">How we work</p>
-          <h2>4 ขั้นตอนก่อนระบบลงมือรันจริง</h2>
+          <p class="eyebrow">How</p>
+          <h2>4 ขั้นตอนสั้นๆ</h2>
         </div>
         <div class="timeline">
-          <div class="step-card card-3d"><strong>1) Discover</strong><span>แปลงโจทย์เป็นข้อกำหนดที่ชัดเจนและวัดผลได้</span></div>
-          <div class="step-card card-3d"><strong>2) Architect</strong><span>ออกแบบ topology, protocol และ data model ให้พร้อมขยายตัว</span></div>
-          <div class="step-card card-3d"><strong>3) Build</strong><span>พัฒนาระบบแบบรันทด และเชื่อม pilot จริงในพื้นที่ใช้งาน</span></div>
-          <div class="step-card card-3d"><strong>4) Operate</strong><span>เปิดใช้งานจริง พร้อมตรวจผล และปรับค่าระบบทุกสัปดาห์</span></div>
+          <div class="step card-3d"><strong>01</strong><span>ประเมินงานจริงและพื้นที่ติดตั้ง</span></div>
+          <div class="step card-3d"><strong>02</strong><span>ออกแบบ topology และ data schema</span></div>
+          <div class="step card-3d"><strong>03</strong><span>ติดตั้ง pilot + ทดสอบความเสถียร</span></div>
+          <div class="step card-3d"><strong>04</strong><span>ดูแลระบบและปรับแต่งรายสัปดาห์</span></div>
         </div>
       </section>
 
-      <section id="contact" class="section contact card-3d">
-        <div>
+      <section id="contact" class="section contact">
+        <article>
           <p class="eyebrow">Contact</p>
-          <h2>หากพร้อมเริ่ม ยกระดับการควบคุมงานของคุณ</h2>
-          <p>
-            ส่งข้อมูลสั้นๆ: มีอุปกรณ์กี่ตัว ต้องติดตามอะไร และต้องการแจ้งเตือนเมื่อไร
-            เราจะจัดทำแนวทางเริ่มต้นและข้อเสนอต้นทุนคร่าวๆ ให้กลับคืนเร็วที่สุด
-          </p>
-        </div>
+          <h2>พร้อมเริ่มต้น?</h2>
+          <p>เล่าโจทย์สั้นๆ ได้เลย เราจะไลน์แผนงานและการจัดสรรงบให้เร็วที่สุด</p>
+        </article>
+
         <form id="lead-form">
           <input required placeholder="ชื่อ-นามสกุล" />
           <input required type="email" placeholder="Email" />
-          <textarea required placeholder="เล่าโจทย์ IoT ของคุณ"></textarea>
-          <button type="submit" class="btn btn-solid">ขอรับคำแนะนำ</button>
+          <input required placeholder="บริษัท" />
+          <textarea required placeholder="โจทย์ IoT ของคุณ"></textarea>
+          <button type="submit" class="btn btn-solid">ให้ทีมติดต่อกลับ</button>
           <p id="lead-status" class="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 HexaScale Solutions Co., Ltd. · Built by HexaScale</p>
-      <p>
-        ซอร์สเว็บหลัก: <a href="https://github.com/jedsadapornpannok/hexascale" target="_blank" rel="noopener noreferrer">github.com/jedsadapornpannok/hexascale</a>
-      </p>
-      <p>Contact: <a href="mailto:contact@hexascale.co">contact@hexascale.co</a></p>
+      <p>© 2026 HexaScale Solutions</p>
+      <p>Source: <a href="https://github.com/tikpoptv/hexascale-iot-landing-new" target="_blank" rel="noopener noreferrer">GitHub</a> · ข้อมูลอ้างอิงเว็บหลักเช่นเดิม</p>
     </footer>
 
     <script src="script.js"></script>
